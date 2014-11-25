@@ -1,0 +1,64 @@
+\documentclass[aspectratio=1610,svgnames]{beamer}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{selinput}
+\SelectInputMappings{%
+   adieresis={ä},
+   germandbls={ß}
+   }
+
+\usetheme{PaloAlto}  %% Themenwahl
+
+\setbeamercovered{transparent}
+%\setbeamertemplate{footline}[frame number]
+\usecolortheme{spruce}		% grün
+\usecolortheme[named=MSUgreen]{structure}
+\newcommand{\hshblogo}{\includegraphics[width=1.3cm]{space-logo}}
+\newcommand{\divider}[1]{\begin{frame} %
+\begin{alertblock}{} %
+\centering\usebeamerfont{section title}#1 %
+\end{alertblock} %
+\end{frame}}
+ 
+\title{vim --- Eine Einführung}
+\author{Thomas Helmke}
+\date{02.12.2014}
+\logo{\includegraphics[width=1.1cm]{space-logo}}
+ 
+\begin{document}
+\maketitle
+\frame{\tableofcontents}
+
+\section{Einleitung}
+\divider{\insertsection}
+\begin{frame}[<+->] %%Eine Folie
+	\frametitle{Warum vim?} %%Folientitel
+	\begin{itemize}
+		\item Warum nicht?
+		\item Effizientes Arbeiten (nach der Lernkurve)
+		\item Ohne Maus bedienbar
+	\end{itemize}
+\end{frame}
+\begin{frame}[<+->] %%Eine Folie
+	\frametitle{Unterschied zu ``normalen'' Editoren} %%Folientitel
+	\begin{itemize}
+		\item Verschiedene Modi für unterschiedliche Zwecke
+		\item Eigener Kommandosatz
+		\item Für reine Tastaturbedienung konzipiert
+	\end{itemize}
+\end{frame}
+
+\section{Die verschiedene Modi}
+\begin{frame}[<+->]
+    \frametitle{Normal-Modus}
+\end{frame} 
+\begin{frame}[<+->]
+    \frametitle{Insert-Modus}
+\end{frame} 
+\begin{frame}[<+->]
+    \frametitle{Visual-Modus}
+\end{frame} 
+
+\end{document}
