@@ -80,8 +80,31 @@
 \section{Der Einstieg}
 \divider{\insertsection}
 \begin{frame}[<+->]
-    \frametitle{vim starten}
-    \includegraphics[width=\textwidth]{bilder/einstieg01}
+    \frametitle{Die ersten Befehle}
+    \begin{description}
+        \item[<ESC>] zurück in den Normal-Modus
+        \item[i] in den Insert-Modus wechseln, Cursor steht vor dem aktuellen Zeichen
+        \item[a] in den Insert-Modus wechseln, Cursor steht hinter dem aktuellen Zeichen
+        \item[cw] löscht bis zum Wortende und wechselt in den Insert-Modus
+    \end{description}
+\end{frame}
+\begin{frame}[<+->]
+    \frametitle{Copy \& Paste}
+    \begin{description}
+        \item[yw] bis zum Wortende kopieren
+        \item[yy] ganze Zeile kopieren
+        \item[dw] bis zum Wortende ausschneiden
+        \item[p] hinter (unter) dem Cursor einfügen
+    \end{description}
+\end{frame}
+\begin{frame}[<+->]
+    \frametitle{Datei speichern und schließen}
+    \begin{description}
+        \item[:w] Datei speichern
+        \item[:q] vim beenden
+        \item[:q!] vim beenden, ohne zu speichern
+        \item[:wq] speichern und beenden
+    \end{description}
 \end{frame}
 
 \end{document}
